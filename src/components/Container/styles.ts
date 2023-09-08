@@ -10,13 +10,14 @@ export const Container = styled.section`
     font-size: 40px;
     position: absolute;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
   }
 
   img{
     object-fit: cover;
     border-radius: 20px;
-    width: 90%;
-    height: 40%;
+    width: 1200px;
+    height: 800px;
     filter: brightness(50%); 
   }
 `

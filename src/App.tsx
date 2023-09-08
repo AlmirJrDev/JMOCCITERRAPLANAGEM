@@ -4,6 +4,8 @@ import GlobalStyle from "./global/globalStyles"
 import { ContainerMain } from "./components/Container"
 import { Service } from "./components/Service"
 import { Tools } from "./components/Tools"
+import { Medias } from "./components/Medias"
+import { Contact } from "./components/Contact"
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <ContainerMain/>
       <Service/>
       <Tools/>
+      <Medias/>
+      <Contact/>
    </Fragment>
   )
 }
