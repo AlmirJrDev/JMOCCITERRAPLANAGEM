@@ -22,7 +22,7 @@ export function Contact() {
               <input type="text" name="Nome" id="" />
             </div>
             <div>
-              <label>Nome <span>(obrigatório)</span></label>
+              <label>Sobrenome<span></span></label>
               <input type="text" name="Sobrenome" id="" />
             </div>
           </FormGroup>
