@@ -3,20 +3,21 @@ import { styled } from "styled-components";
 export const ContainerContact = styled.section`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
 
  
 
 `
 export const DivImg = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+ 
+
   img{
   
   object-fit: cover;
-    height: 400px;
-    width: 800px;
+    height: 600px;
+    width: 600px;
 
  
   }
@@ -26,7 +27,7 @@ export const FormContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-
+  margin: 0 auto;
   form{
     display: flex;
     align-items: flex-start;

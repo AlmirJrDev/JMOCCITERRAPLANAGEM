@@ -6,7 +6,7 @@ export const ContainerMedias = styled.section`
   align-items: center;
 
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 20rem;
 
 
   h2{

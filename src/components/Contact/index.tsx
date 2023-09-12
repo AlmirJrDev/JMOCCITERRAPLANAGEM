@@ -1,5 +1,5 @@
 import { ContainerContact, DivImg, FormContainer, FormGroup } from "./style";
-
+import Escavadeira from "../../assets/escavadeira.jpeg"
 
 export function Contact() {
 
@@ -9,7 +9,7 @@ export function Contact() {
   return(
     <ContainerContact>
       <DivImg>
-
+        <img src={Escavadeira} alt="" />
       </DivImg>
      
       <FormContainer>
