@@ -2,7 +2,7 @@ import { DivGroup, SectionService } from "./style";
 
 export function Service() {
   return(
-    <SectionService>
+    <SectionService id="service">
       <div>
         <h2>Nossos serviços</h2>
       </div>

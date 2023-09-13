@@ -8,10 +8,10 @@ export function Header() {
         <img src={Logo} alt="" />
       </div>
       <ul>
-       <li><a href="">Sobre</a></li>
-       <li><a href="">Serviços</a></li>
-        <li><a href="">Redes</a></li>
-        <li><a href="">Contato</a></li>
+       <li><a href="#">Sobre</a></li>
+       <li><a href="#service">Serviços</a></li>
+        <li><a href="#medias">Redes</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </HeaderDiv>
   )

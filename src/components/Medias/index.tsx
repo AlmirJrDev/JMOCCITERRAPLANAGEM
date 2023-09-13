@@ -4,7 +4,7 @@ import { ContainerMedias, LinkGroup } from "./style";
 
 export function Medias() {
   return(
-    <ContainerMedias>
+    <ContainerMedias id='medias'>
       <div>
        <h2>Siga-nos nas <br /> redes sociais</h2>
       </div>

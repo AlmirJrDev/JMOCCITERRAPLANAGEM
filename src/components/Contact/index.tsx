@@ -7,7 +7,7 @@ export function Contact() {
 
 
   return(
-    <ContainerContact>
+    <ContainerContact id="contato">
       <DivImg>
         <img src={Escavadeira} alt="" />
       </DivImg>
