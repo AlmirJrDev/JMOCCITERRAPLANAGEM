@@ -6,7 +6,9 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   flex-direction: column;
   a{
-  color: black;
+    font-weight: bold;
+  
+  color: #0049E6;
 }
 `
 export const FooterGroup = styled.div`
@@ -22,6 +24,8 @@ justify-content: center;
 flex-direction: column;
 margin: 4rem;
 a{
-  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0049E6;
 }
 `

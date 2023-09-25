@@ -4,8 +4,11 @@ import { Container } from './styles';
 // Importe as imagens SVG
 import ImgMain from '../../assets/container.svg';
 import Escavadeira from '../../assets/escavadeira.jpeg';
+import Retroescavadeira from '../../assets/retroescavadeira.jpeg'
+import CaminhãoCaçamba from '../../assets/caçamba.jpeg'
+import PáCarregadeira from '../../assets/pacarregadeira.jpeg'
 
-const images: string[] = [ImgMain, Escavadeira]; // Coloque todos os caminhos das imagens em um array
+const images: string[] = [ImgMain, Escavadeira, Retroescavadeira, CaminhãoCaçamba, PáCarregadeira]; // Coloque todos os caminhos das imagens em um array
 
 export function ContainerMain() {
   const [currentImage, setCurrentImage] = useState<string | null>(null);

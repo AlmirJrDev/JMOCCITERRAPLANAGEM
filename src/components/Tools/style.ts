@@ -2,9 +2,7 @@ import { styled } from "styled-components";
 
 export const ContainerTools = styled.section`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  
 `
 export const MainGroup = styled.div`
     display: flex;
