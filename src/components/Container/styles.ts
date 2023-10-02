@@ -5,6 +5,8 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
 
+  
+
   h1{
     text-align: center;
     font-size: 40px;

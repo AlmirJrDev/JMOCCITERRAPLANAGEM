@@ -11,6 +11,7 @@ import PáCarregadeira from '../../assets/pacarregadeira.jpeg'
 const images: string[] = [ImgMain, Escavadeira, Retroescavadeira, CaminhãoCaçamba, PáCarregadeira]; // Coloque todos os caminhos das imagens em um array
 
 export function ContainerMain() {
+  
   const [currentImage, setCurrentImage] = useState<string | null>(null);
 
   useEffect(() => {

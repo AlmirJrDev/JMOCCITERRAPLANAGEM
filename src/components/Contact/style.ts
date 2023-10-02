@@ -1,9 +1,17 @@
 import { styled } from "styled-components";
 
-export const ContainerContact = styled.section`
+interface ContainerProps {
+  isVisible: boolean;
+}
+
+export const ContainerContact = styled.section<ContainerProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+   /* Efeito de fade-in */
+ opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transition: opacity 1s ease-in-out;
 
 
  
@@ -60,14 +68,24 @@ export const FormContainer = styled.div`
 
     button{
       font-size: 15px;
-      background: #000;
-      border: none;
-      color: #fff;
-      width: 80px;
-      height: 35px;
+      background: #fff;
+      border: 2px solid;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      width: 400px;
+      height: 40px;
       border-radius: 15px;
       margin-bottom: 2rem;
+      transition: ease-in-out 0.2s;
+      
+      &:hover{
+      background: #000;
+      color: #fff;
     }
+    }
+
+
 `
 
 export const FormGroup = styled.div`
@@ -94,7 +112,7 @@ export const FormGroup = styled.div`
     }
 
     input{
-      width: 180px;
+      width: 400px;
       height: 40px;
     }
    }
