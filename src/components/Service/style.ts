@@ -1,10 +1,16 @@
 import { styled } from "styled-components";
 
-export const SectionService = styled.section`
+interface ContainerProps {
+  isVisible: boolean;
+}
+export const SectionService = styled.section<ContainerProps>`
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+   /* Efeito de fade-in */
+   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transition: opacity 1s ease-in-out;
 
 h2{
   margin-top: 4rem;

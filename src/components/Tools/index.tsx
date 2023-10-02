@@ -5,7 +5,26 @@ import PáCarregadeira from '../../assets/pacarregadeira.jpeg'
 import { ContainerTools, GroupDiv, GroupImg, MainGroup } from './style'
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import { useEffect, useState, useRef } from "react";
 export function Tools() {
+  const [isVisible, setIsVisible] = useState(false);
+  const ContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elementTop = ContainerRef.current?.getBoundingClientRect().top ?? 0;
+      const offset = window.innerHeight * 0.8; // Ajuste este valor para controlar quando o fade-in deve ocorrer
+
+      if (elementTop < offset) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const [sliderRef] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
@@ -42,8 +61,8 @@ export function Tools() {
     ]
   )
   return(
-    <ContainerTools ref={sliderRef} className="keen-slider">
-      <MainGroup className="keen-slider__slide number-slide1">
+    <ContainerTools id='machine' ref={sliderRef} className="keen-slider" >
+      <MainGroup ref={ContainerRef} isVisible={isVisible} className="keen-slider__slide number-slide1">
          <GroupImg>
           <img src={Escavadeira} alt="" />
          </GroupImg>
@@ -53,7 +72,7 @@ export function Tools() {
          </GroupDiv>
       </MainGroup>
 
-      <MainGroup className="keen-slider__slide number-slide2">
+      <MainGroup ref={ContainerRef} isVisible={isVisible}className="keen-slider__slide number-slide2">
        
         <GroupDiv>
           <h2>Retroescavadeira</h2>
@@ -64,7 +83,7 @@ export function Tools() {
         </GroupImg>
       </MainGroup>
 
-      <MainGroup className="keen-slider__slide number-slide3">
+      <MainGroup ref={ContainerRef} isVisible={isVisible} className="keen-slider__slide number-slide3">
         <GroupImg>
           <img src={CaminhãoCaçamba} alt="" />
         </GroupImg>
@@ -74,7 +93,7 @@ export function Tools() {
         </GroupDiv>
       </MainGroup>
 
-      <MainGroup className="keen-slider__slide number-slide4">
+      <MainGroup ref={ContainerRef} isVisible={isVisible} className="keen-slider__slide number-slide4">
       <GroupDiv>
          <h2>Pá Carregadeira</h2>
           <p>Nossos serviços de escavadeira estão prontos para transformar seus projetos de construção, agricultura ou demolição em realidade. Com a precisão e eficiência das escavadeiras modernas, podemos realizar escavações, movimentações de terra e muito mais.</p>

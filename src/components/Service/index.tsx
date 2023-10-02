@@ -1,8 +1,28 @@
 import { DivGroup, SectionService } from "./style";
+import { useEffect, useState, useRef } from "react";
 
 export function Service() {
+  const [isVisible, setIsVisible] = useState(false);
+  const ContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elementTop = ContainerRef.current?.getBoundingClientRect().top ?? 0;
+      const offset = window.innerHeight * 0.8; // Ajuste este valor para controlar quando o fade-in deve ocorrer
+
+      if (elementTop < offset) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return(
-    <SectionService id="service">
+    <SectionService id="service"  ref={ContainerRef} isVisible={isVisible}>
       <div>
         <h2>Nossos serviços</h2>
       </div>

@@ -1,10 +1,15 @@
 import { styled } from "styled-components";
+interface ContainerProps {
+  isVisible: boolean;
+}
 
-export const ContainerMedias = styled.section`
+export const ContainerMedias = styled.section<ContainerProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transition: opacity 1s ease-in-out;
   flex-direction: column;
   margin-bottom: 20rem;
 
