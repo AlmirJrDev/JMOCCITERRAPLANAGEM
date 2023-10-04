@@ -5,6 +5,8 @@ interface ContainerProps {
 }
 
 export const ContainerContact = styled.section<ContainerProps>`
+padding: 5rem 0;
+background: #58C689;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,6 +33,9 @@ export const DivImg = styled.div`
   }
 `
 export const FormContainer = styled.div`
+  h2{
+    color: #000
+  }
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -55,6 +60,7 @@ export const FormContainer = styled.div`
     }
 
     input{
+      margin-bottom: 1rem;
       width: 400px;
       height: 40px;
     }
@@ -80,7 +86,7 @@ export const FormContainer = styled.div`
       transition: ease-in-out 0.2s;
       
       &:hover{
-      background: #000;
+      background: #004f40;
       color: #fff;
     }
     }

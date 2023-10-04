@@ -5,6 +5,7 @@ interface ContainerProps {
 }
 export const SectionService = styled.section<ContainerProps>`
 display: flex;
+background: #f8fcff;
 align-items: center;
 justify-content: center;
 flex-direction: column;
@@ -15,7 +16,8 @@ flex-direction: column;
 h2{
   margin-top: 4rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  color: #85c300;
+  font-weight: bold;
   font-size: 40px;
 }
 `
@@ -27,11 +29,16 @@ export const DivGroup = styled.div`
     justify-content: space-around;
     gap: 24px;
 
+    p {
+      color: #616161;
+    }
     h4{
+      font-size: 20px;
+      color: #85c300;
       font-family: 'Montserrat', sans-serif;
   font-weight: 700;
       padding-left: 16px;
-      border-left: 3px solid #000;
+      border-left: 3px solid #00fd8f;
     }
 
 div{

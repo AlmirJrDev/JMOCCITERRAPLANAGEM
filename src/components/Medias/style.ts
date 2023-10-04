@@ -4,6 +4,7 @@ interface ContainerProps {
 }
 
 export const ContainerMedias = styled.section<ContainerProps>`
+margin-top: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;

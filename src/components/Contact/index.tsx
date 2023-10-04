@@ -65,14 +65,14 @@ export function Contact() {
           <FormGroup>
             <div>
               <label htmlFor="name">Nome <span>(obrigatório)</span></label>
-              <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
+              <input placeholder="Nome completo." type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
             </div>
         
           </FormGroup>
           <label>Email <span>(obrigatório)</span></label>
-          <input type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input placeholder="Insira seu melhor email."  type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           <label>Mensagem <span>(obrigatório)</span></label>
-          <textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required> </textarea>
+          <textarea placeholder="Conte para nós, ." id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required> </textarea>
           <button type="submit" value="Enviar">Enviar</button>
         </form>
       </FormContainer>
