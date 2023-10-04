@@ -63,11 +63,13 @@ export const FormContainer = styled.div`
       margin-bottom: 1rem;
       width: 400px;
       height: 40px;
+      padding-left: 4px;
     }
 
     textarea{
       width: 400px;
       height: 80px;
+      padding-left: 4px;
 
       margin-bottom: 1rem;
     }

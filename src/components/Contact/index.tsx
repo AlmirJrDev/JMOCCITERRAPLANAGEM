@@ -72,7 +72,7 @@ export function Contact() {
           <label>Email <span>(obrigatório)</span></label>
           <input placeholder="Insira seu melhor email."  type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           <label>Mensagem <span>(obrigatório)</span></label>
-          <textarea placeholder="Conte para nós, ." id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required> </textarea>
+          <textarea placeholder="Conte para nós sobre o que está precisando." id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required> </textarea>
           <button type="submit" value="Enviar">Enviar</button>
         </form>
       </FormContainer>
