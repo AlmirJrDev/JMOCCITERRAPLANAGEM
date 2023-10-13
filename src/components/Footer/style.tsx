@@ -10,11 +10,21 @@ export const FooterContainer = styled.footer`
   
   color: #0049E6;
 }
+
+
 `
 export const FooterGroup = styled.div`
    display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 375px) {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} 
   
 `
 export const Group = styled.div`
@@ -28,4 +38,5 @@ a{
   text-decoration: none;
   color: #0049E6;
 }
+
 `

@@ -58,7 +58,7 @@ export function Service() {
 
            
         <div>
-          <h4>Comprometidos com a Qualidade e a Satisfação do Cliente <Handshake size={32} /></h4>
+          <h4>Comprometidos com a Qualidade <Handshake size={32} /></h4>
           <p>Na JMOCCI Terraplanagem, a qualidade é nossa prioridade. Trabalhamos com rigorosos padrões de segurança e qualidade, garantindo que cada projeto seja concluído com excelência. Nossa equipe está pronta para ouvir suas necessidades e superar suas expectativas.</p>
         </div>    
 

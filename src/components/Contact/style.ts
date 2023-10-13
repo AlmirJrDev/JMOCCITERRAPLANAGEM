@@ -93,35 +93,27 @@ export const FormContainer = styled.div`
     }
     }
 
-
-`
-
-export const FormGroup = styled.div`
+    @media (max-width: 375px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    div{
-      display: flex;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-
-    label{
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-
-    span{
-      font-weight: 500;
-      color: gray
-    }
-
+    
     input{
-      width: 400px;
+      width: 300px;
       height: 40px;
     }
-   }
+
+    textarea{
+      width: 300px;
+      height: 80px;
+    }
+
+    button{
+      width: 300px;
+    }
+  }
+
+
 `
+

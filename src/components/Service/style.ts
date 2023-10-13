@@ -20,6 +20,10 @@ h2{
   font-weight: bold;
   font-size: 40px;
 }
+
+@media (max-width: 375px) {
+   
+  }
 `
 
 export const DivGroup = styled.div`
@@ -44,5 +48,20 @@ export const DivGroup = styled.div`
 div{
   width: 25%;
 padding: 32px 0;
+}
+@media (max-width: 375px) {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+
+    div{
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  }
 }
 `

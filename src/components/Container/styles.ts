@@ -6,6 +6,7 @@ export const Container = styled.section`
   background: #fff;
   justify-content: center;
 
+ 
   
 
   h1{
@@ -22,5 +23,14 @@ export const Container = styled.section`
     width: 1200px;
     height: 800px;
     filter: brightness(50%); 
+  }
+
+  @media (max-width: 375px) {
+    
+    img{
+      width: 100%;
+      border-radius: 0;
+      object-fit: cover;
+    }
   }
 `

@@ -25,7 +25,7 @@ export function Medias() {
   return(
     <ContainerMedias id='medias'ref={ContainerRef} isVisible={isVisible}>
       <div>
-       <h2>Siga-nos nas <br /> redes sociais</h2>
+       <h2>Siga-nos nas redes sociais</h2>
       </div>
       <LinkGroup>
         <a href="https://www.instagram.com/mocci_terraplanagem/"><div> <InstagramLogo size={32} color="#000" weight="light" />Instagram</div></a>

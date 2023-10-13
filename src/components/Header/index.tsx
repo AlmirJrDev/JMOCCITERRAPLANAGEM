@@ -1,19 +1,21 @@
-import { HeaderDiv } from "./style";
-import Logo from '../../assets/logo.svg'
+import { DivImg, HeaderDiv, UlGroup } from "./style";
+import Logo from '../../assets/logo.png'
 
 export function Header() {
   return(
     <HeaderDiv>
-      <div>
+      <DivImg>
         <img src={Logo} alt="" />
-      </div>
+      </DivImg>
+      <UlGroup>
       <ul>
 
        <li><a href="#service">Serviços</a></li>
-       <li><a href="#machine">Nossas Máquinas</a></li>
+       <li><a href="#machine">Máquinas</a></li>
         <li><a href="#medias">Redes</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
+      </UlGroup>
     </HeaderDiv>
   )
 }

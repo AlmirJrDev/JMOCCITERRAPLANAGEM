@@ -1,4 +1,4 @@
-import { ContainerContact,  FormContainer, FormGroup } from "./style";
+import { ContainerContact,  FormContainer,  } from "./style";
 
 import { useEffect, useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -62,13 +62,9 @@ export function Contact() {
         <h2>Entre em contato</h2>
 
         <form onSubmit={sendEmail}>
-          <FormGroup>
-            <div>
-              <label htmlFor="name">Nome <span>(obrigatório)</span></label>
+       
+          <label htmlFor="name">Nome <span>(obrigatório)</span></label>
               <input placeholder="Nome completo." type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
-            </div>
-        
-          </FormGroup>
           <label>Email <span>(obrigatório)</span></label>
           <input placeholder="Insira seu melhor email."  type="email" id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           <label>Mensagem <span>(obrigatório)</span></label>

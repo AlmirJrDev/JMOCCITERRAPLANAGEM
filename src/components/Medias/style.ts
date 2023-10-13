@@ -19,6 +19,17 @@ margin-top: 15rem;
   font-size: 70px;
   font-weight: 400;
   }
+
+  @media (max-width: 375px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    h2{
+      text-align: center;
+    }
+  }
 `
 export const LinkGroup = styled.div`
   display: flex;
@@ -39,5 +50,15 @@ export const LinkGroup = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  @media (max-width: 375px) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+   
   }
 `
