@@ -25,7 +25,7 @@ export const MainGroup = styled.div<ContainerProps>`
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transition: opacity 1s ease-in-out;
 
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,16 +47,17 @@ export const GroupImg = styled.div`
   }
   
   
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     img{
-      
+      width: 50%;
     }
   }
 `
+
 
 export const GroupDiv = styled.div`
 display: flex;
@@ -88,15 +89,8 @@ p{
       font-size: 30px;
     }
     p{
-      width: 100%;
-  color: #fff;
-  font-size: 15px;
-  width: 50%;
+      display: none;
 }
-    img{
-      width: 100%;
-      border-radius: 0;
-      object-fit: cover;
-    }
+  
   }                             
 `
