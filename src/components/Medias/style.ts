@@ -20,7 +20,7 @@ margin-top: 15rem;
   font-weight: 400;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@ export const LinkGroup = styled.div`
     align-items: center;
     flex-direction: column;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     display: grid;
     align-items: center;
     justify-content: center;

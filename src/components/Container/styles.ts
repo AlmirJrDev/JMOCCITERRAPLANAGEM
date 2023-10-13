@@ -25,7 +25,7 @@ export const Container = styled.section`
     filter: brightness(50%); 
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     
     img{
       width: 100%;

@@ -18,7 +18,7 @@ export const FooterGroup = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
   
   display: flex;
   align-items: center;

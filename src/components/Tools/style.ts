@@ -78,7 +78,7 @@ p{
   width: 50%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 700px) {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -21,7 +21,7 @@ h2{
   font-size: 40px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 700px) {
    
   }
 `
@@ -49,7 +49,7 @@ div{
   width: 25%;
 padding: 32px 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 700px) {
     
     display: flex;
     align-items: center;

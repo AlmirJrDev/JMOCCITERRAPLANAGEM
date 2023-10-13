@@ -8,7 +8,7 @@ justify-content: space-between;
 
 margin-bottom: 0.5rem;
 
-@media (max-width: 375px) {
+@media (max-width: 700px) {
     
     display: flex;
 align-items: center;
@@ -47,7 +47,7 @@ img{
     margin: 20px 10px;
     width: 200px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
     
     display: flex;
 align-items: center;
@@ -57,7 +57,7 @@ justify-content: center;
   }
 `
 export const UlGroup = styled.div`
-  @media (max-width: 375px) {
+  @media (max-width: 700px) {
 
   }
 `
