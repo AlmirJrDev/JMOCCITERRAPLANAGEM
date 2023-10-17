@@ -33,10 +33,21 @@ export const DivGroup = styled.div`
     justify-content: space-around;
     gap: 24px;
 
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+    }
+
     p {
       color: #616161;
     }
     h4{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
       font-size: 20px;
       color: #85c300;
       font-family: 'Montserrat', sans-serif;

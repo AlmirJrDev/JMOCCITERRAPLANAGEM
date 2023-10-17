@@ -13,9 +13,16 @@ margin-top: 15rem;
   transition: opacity 1s ease-in-out;
   flex-direction: column;
   margin-bottom: 20rem;
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   h2{
+    text-align: center;
+    width: 50%;
   font-size: 70px;
   font-weight: 400;
   }

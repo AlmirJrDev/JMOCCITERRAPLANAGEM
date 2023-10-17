@@ -28,7 +28,19 @@ ul{
   a{
     text-decoration: none;
     color: #000;
-    font-weight: 500;
+    font-weight: 700;
+   
+    border-radius: 5px;
+    padding: 14px 28px;
+    transition: 0.2s ease-in-out;
+    background: #aeff00;
+
+    &:hover{
+      
+      color: #fff;  
+    
+    background: #58c6;
+    }
     
   }
 
