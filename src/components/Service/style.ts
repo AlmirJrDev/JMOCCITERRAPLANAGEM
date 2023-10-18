@@ -79,7 +79,7 @@ padding: 32px 0;
       display: flex;
       align-items: space-around;
       justify-content: center;
-   
+
     }
 }
 `

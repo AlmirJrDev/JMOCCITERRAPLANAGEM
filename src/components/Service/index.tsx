@@ -30,15 +30,15 @@ export function Service() {
       <DivGroup>
         <div>
           <h4>Limpeza de terreno <Trash size={32} /></h4>
-          <p>A limpeza de terreno é um conjunto de serviços essenciais para preparar, manter e restaurar áreas de terra. Essas atividades visam remover detritos, vegetação indesejada e outros obstáculos que possam comprometer a utilidade e a estética do terreno.</p>
+          <p>Utilizamos nossas máquinas para a limpeza de terrenos, independentemente do tamanho. Dispomos de equipamentos adequados tanto para tarefas de maior porte quanto para serviços mais compactos.</p>
         </div>
         <div>
           <h4>Perfuratriz <CaretCircleDoubleDown size={32} /></h4>
-          <p>Uma perfuratriz é uma máquina utilizada para fazer furos ou perfurações em diferentes tipos de materiais, como solo, rochas ou concreto, geralmente usada na construção civil, mineração e perfuração de poços.</p>
+          <p>A perfuratriz é uma máquina que utilizamos para fazer furos ou perfurações em diferentes tipos de materiais, como solo, rochas ou concreto, geralmente usamos na construção civil, mineração e perfuração de poços.</p>
         </div>
         <div>
-          <h4> Deslocamento de terra <Truck size={32} /> </h4>
-          <p>O deslocamento de terra é o processo de movimentação de solo, pedras e outros materiais da superfície da Terra, geralmente realizado para nivelar terrenos, construir estradas, edifícios e outras obras de engenharia civil.</p>
+          <h4>Deslocamento<Truck size={32} /> </h4>
+          <p>Caso seja necessário remover terra ou transportá-la para outro local, nossos caminhões-caçamba estão à disposição para executar o serviço de forma prática e conveniente para você.</p>
         </div>
 
       </DivGroup>
@@ -48,7 +48,7 @@ export function Service() {
         
     
           <h4>Terraplanagem <RoadHorizon size={32} /></h4>
-          <p>A terraplanagem não é apenas nivelar o solo; é criar uma base sólida para seus projetos. Trabalhamos em estreita colaboração com você para entender suas necessidades e oferecer soluções personalizadas que atendam aos seus objetivos.</p>
+          <p>Além disso, estamos capacitados para efetuar o processo de terraplanagem e nivelamento do terreno, transformando-o em uma nova oportunidade para você.</p>
         </div>
 
         <div>

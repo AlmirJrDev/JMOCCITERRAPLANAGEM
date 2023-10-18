@@ -26,6 +26,9 @@ ul{
  
 
   a{
+    display: flex;
+  align-items: center;
+  justify-content: center;
     text-decoration: none;
     color: #000;
     font-weight: 700;
@@ -35,7 +38,8 @@ ul{
     transition: 0.2s ease-in-out;
     background: #aeff00;
     padding: 0.25rem;
-    margin: 0.225rem;
+    margin-right: 0.5rem;
+   
 
     &:hover{
       
@@ -58,7 +62,7 @@ ul{
 export const DivImg = styled.div`
 
 img{
-    margin: 20px 10px;
+    margin: 2rem;
     width: 200px;
   }
   @media (max-width: 700px) {
@@ -66,8 +70,7 @@ img{
     display: flex;
 align-items: center;
 justify-content: center;
-   flex-direction: column; 
-
+  
 
    
   }
