@@ -22,7 +22,7 @@ ul{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-right: 2rem;
 
   a{
@@ -31,7 +31,7 @@ ul{
     font-weight: 700;
    
     border-radius: 5px;
-    padding: 14px 28px;
+    padding: 7px 7px;
     transition: 0.2s ease-in-out;
     background: #aeff00;
 
@@ -66,7 +66,11 @@ align-items: center;
 justify-content: center;
    flex-direction: column; 
 
+
+   
   }
+
+ 
 `
 export const UlGroup = styled.div`
   @media (max-width: 700px) {
