@@ -45,7 +45,7 @@ export const DivGroup = styled.div`
     }
     h4{
       display: flex;
-      align-items: center;
+      align-items: start;
       justify-content: center;
       gap: 0.5rem;
       font-size: 20px;
@@ -71,8 +71,15 @@ padding: 32px 0;
 
     div{
   width: 70%;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   }
+
+  h4{
+      display: flex;
+      align-items: space-around;
+      justify-content: center;
+   
+    }
 }
 `

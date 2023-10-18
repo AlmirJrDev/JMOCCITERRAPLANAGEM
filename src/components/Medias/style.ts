@@ -35,6 +35,7 @@ margin-top: 15rem;
     
     h2{
       text-align: center;
+      font-size: 40px;
     }
   }
 `
@@ -63,9 +64,10 @@ export const LinkGroup = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 1rem;
 
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+
+    gap: 1.5rem;
    
   }
 `

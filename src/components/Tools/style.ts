@@ -17,6 +17,7 @@ export const ContainerTools = styled.section`
  
 `
 export const MainGroup = styled.div<ContainerProps>`
+overflow-x: hidden;
     display: flex;
   justify-content: space-between;
   align-items: center;
