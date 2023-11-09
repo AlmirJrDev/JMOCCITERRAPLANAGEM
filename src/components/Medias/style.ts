@@ -9,6 +9,7 @@ margin-top: 15rem;
   justify-content: center;
   align-items: center;
   
+  
   opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
   transition: opacity 1s ease-in-out;
   flex-direction: column;

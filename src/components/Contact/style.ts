@@ -6,7 +6,22 @@ interface ContainerProps {
 
 export const ContainerContact = styled.section<ContainerProps>`
 padding: 5rem 0;
-background: #58C689;
+background: linear-gradient(91deg,#58c689,#24a562,#24a562,#345427);
+  background-size: 240% 240%;
+  animation: gradient-animation 12s ease infinite;
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -2,7 +2,12 @@ import { CaretCircleDoubleDown, CurrencyCircleDollar, Handshake, RoadHorizon, Tr
 import { DivGroup, SectionService } from "./style";
 import { useEffect, useState, useRef } from "react";
 
+
+
 export function Service() {
+
+ 
+
   const [isVisible, setIsVisible] = useState(false);
   const ContainerRef = useRef<HTMLDivElement>(null);
 
@@ -33,7 +38,8 @@ export function Service() {
           <p>Utilizamos nossas máquinas para a limpeza de terrenos, independentemente do tamanho. Dispomos de equipamentos adequados tanto para tarefas de maior porte quanto para serviços mais compactos.</p>
         </div>
         <div>
-          <h4>Perfuratriz <CaretCircleDoubleDown size={32} /></h4>
+          <h4>Perfuratriz 
+      <CaretCircleDoubleDown size={32} /></h4>
           <p>A perfuratriz é uma máquina que utilizamos para fazer furos ou perfurações em diferentes tipos de materiais, como solo, rochas ou concreto, geralmente usamos na construção civil, mineração e perfuração de poços.</p>
         </div>
         <div>

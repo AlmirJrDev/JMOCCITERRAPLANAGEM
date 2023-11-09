@@ -8,14 +8,14 @@ export function Header() {
         <img src={Logo} alt="" />
       </DivImg>
       <UlGroup>
-      <ul>
-
-       <li><a href="#service">Serviços</a></li>
-       <li><a href="#machine">Máquinas</a></li>
-        <li><a href="#medias">Redes</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+      
+        <a href="#service">Serviços</a>
+        <a href="#machine">Máquinas</a>
+        <a href="#medias">Redes</a>
+        <a href="#contato">Contato</a>
+      
       </UlGroup>
+     
     </HeaderDiv>
   )
 }
