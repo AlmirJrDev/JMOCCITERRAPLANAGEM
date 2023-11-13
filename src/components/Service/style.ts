@@ -26,19 +26,26 @@ h2{
   }
 `
 
+export const DivText = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`
+
+export const DivContent = styled.div`
+     display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+`
+
 export const DivGroup = styled.div`
     margin: 32px 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 24px;
-
-    div{
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      flex-direction: column;
-    }
 
     p {
       color: #616161;

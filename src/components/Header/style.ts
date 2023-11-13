@@ -124,7 +124,7 @@ a{
     margin: 0 auto;
     padding:  0;
     margin-bottom: 1rem;
-    width: 93%;
+    width: 97%;
   
    
   }
