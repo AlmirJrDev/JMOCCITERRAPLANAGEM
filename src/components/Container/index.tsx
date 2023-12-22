@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { Container } from './styles';
+import { Container, Image } from './styles';
 
 // Importe as imagens SVG
 import ImgMain from '../../assets/container.svg';
@@ -12,19 +12,30 @@ const images: string[] = [ImgMain, Escavadeira, Retroescavadeira, CaminhãoCaça
 
 export function ContainerMain() {
   
-  const [currentImage, setCurrentImage] = useState<string | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    // Escolha uma imagem aleatoriamente quando o componente montar
-    const randomIndex = Math.floor(Math.random() * images.length);
-    setCurrentImage(images[randomIndex]);
-  }, []);
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images]);
 
   return (
     <Container>
-      {currentImage && <img src={currentImage} alt="Imagem aleatória" />}
+       {images.map((imageUrl, index) => (
+        <Image
+          key={index}
+          src={imageUrl}
+          alt={`Imagem ${index + 1}`}
+          visible={index === currentImageIndex}
+        />
+      ))}
       <h1>
-        JMOCCI <br />
+        J.MOCCI <br />
         Terraplanagem
       </h1>
     </Container>

@@ -1,4 +1,12 @@
 import { styled } from "styled-components";
+export const Image = styled.img<{ visible: boolean }>`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 50rem;
+  opacity: ${(props) => (props.visible ? 1 : 0)};
+  transition: opacity 1s ease-in-out;
+`;
 
 export const Container = styled.section`
   display: flex;
@@ -6,13 +14,14 @@ export const Container = styled.section`
   background: #fff;
   justify-content: center;
 
- 
+  margin-bottom: 40rem;
   
 
   h1{
     text-align: center;
     font-size: 40px;
     position: absolute;
+    margin-top: 50rem;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
   }
