@@ -2,6 +2,9 @@ import Escavadeira from '../../assets/escavadeira.jpeg'
 import Retroescavadeira from '../../assets/retroescavadeira.jpeg'
 import CaminhãoCaçamba from '../../assets/caçamba.jpeg'
 import PáCarregadeira from '../../assets/pacarregadeira.jpeg'
+import BobCat from '../../assets/bobcat.jpeg'
+import MiniEscavadeira from '../../assets/miniescavadeira.jpeg'
+
 import { ContainerTools, GroupDiv, GroupImg, MainGroup } from './style'
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
@@ -41,7 +44,7 @@ export function Tools() {
           if (mouseOver) return
           timeout = setTimeout(() => {
             slider.next()
-          }, 3000)
+          }, 13000)
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
@@ -100,6 +103,27 @@ export function Tools() {
          </GroupDiv>
          <GroupImg>
           <img src={PáCarregadeira} alt="" />
+         </GroupImg>
+      
+      </MainGroup>
+
+      <MainGroup ref={ContainerRef} isVisible={isVisible} className="keen-slider__slide number-slide3">
+        <GroupImg>
+          <img src={BobCat} alt="" />
+        </GroupImg>
+        <GroupDiv>
+          <h2>Mini Carregadeira <br />BobCat</h2>
+          <p>Essa máquina é essencial para carregar e transportar diferentes tipos de materiais, desde terra até materiais de construção. Sua capacidade de acoplar diversos acessórios a torna uma ferramenta adaptável, permitindo realizar tarefas como nivelamento, escavação e carregamento com facilidade. </p>
+        </GroupDiv>
+      </MainGroup>
+
+      <MainGroup ref={ContainerRef} isVisible={isVisible} className="keen-slider__slide number-slide4">
+      <GroupDiv>
+         <h2>Mini Escavadeira</h2>
+          <p>Com sua capacidade compacta, a mini escavadeira permite acesso a áreas restritas, agilizando a escavação e remoção de solo de maneira precisa. Sua versatilidade se destaca na execução de tarefas como nivelamento de terreno, escavação de valas e preparação de terreno para construção. </p>
+         </GroupDiv>
+         <GroupImg>
+          <img src={MiniEscavadeira} alt="" />
          </GroupImg>
       
       </MainGroup>
