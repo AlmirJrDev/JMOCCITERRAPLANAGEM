@@ -14,7 +14,7 @@ export const Container = styled.section`
   background: #fff;
   justify-content: center;
 
-  margin-bottom: 40rem;
+  margin-bottom: 52rem;
   
 
   h1{
