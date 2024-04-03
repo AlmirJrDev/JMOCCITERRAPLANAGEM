@@ -71,7 +71,7 @@ export const FormContainer = styled.div`
 
     span{
       font-weight: 500;
-      color: gray
+      color: white
     }
 
     input{
@@ -96,7 +96,7 @@ export const FormContainer = styled.div`
       color: #000;
       cursor: pointer;
       font-weight: bold;
-      width: 400px;
+      width: 100%;
       height: 40px;
       border-radius: 15px;
       margin-bottom: 2rem;
