@@ -1,5 +1,5 @@
 import { DivImg, HeaderDiv, UlGroup } from "./style";
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/logo.svg'
 
 export function Header() {
   return(
@@ -8,12 +8,10 @@ export function Header() {
         <img src={Logo} alt="" />
       </DivImg>
       <UlGroup>
-      
         <a href="#service">Serviços</a>
         <a href="#machine">Máquinas</a>
         <a href="#medias">Redes</a>
         <a href="#contato">Contato</a>
-      
       </UlGroup>
      
     </HeaderDiv>

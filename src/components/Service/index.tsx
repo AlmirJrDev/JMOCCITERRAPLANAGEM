@@ -120,7 +120,7 @@ export function Service() {
     trigger="loop"
     style={{width: "32px", height:"32px"}}>
 </lord-icon></h4>
-          <p>Na JMOCCI Terraplanagem, a qualidade é nossa prioridade. Trabalhamos com rigorosos padrões de segurança e qualidade, garantindo que cada projeto seja concluído com excelência. Nossa equipe está pronta para ouvir suas necessidades e superar suas expectativas.</p>
+          <p>Na J.MOCCI Terraplanagem Paranavaí, a qualidade é nossa prioridade, trabalhamos com rigorosos padrões de segurança e qualidade, garantindo que cada projeto seja concluído com excelência. Nossa equipe está pronta para ouvir suas necessidades e superar suas expectativas.</p>
         </DivContent>    
 
       </DivGroup>

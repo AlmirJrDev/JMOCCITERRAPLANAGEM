@@ -79,7 +79,7 @@ export function Tools() {
        
         <GroupDiv>
           <h2>Retroescavadeira</h2>
-          <p>Nossos serviços de retroescavadeira oferecem a força e a versatilidade necessárias para levar seus projetos ao próximo nível. Combinando precisão e eficiência, nossa equipe especializada está pronta para atender às suas necessidades em: </p>
+          <p>Nossos serviços de retroescavadeira oferecem a força e a versatilidade necessárias para levar seus projetos ao próximo nível. Combinando precisão e eficiência, nossa equipe especializada está pronta para atender às suas necessidades em.</p>
         </GroupDiv>
         <GroupImg>
           <img src={Retroescavadeira} alt="" />
@@ -92,7 +92,7 @@ export function Tools() {
         </GroupImg>
         <GroupDiv>
           <h2>Caminhão Caçamba</h2>
-          <p>Nossos serviços de caminhão caçamba estão prontos para lidar com suas necessidades de transporte de grandes volumes de materiais de forma eficiente e confiável. Conte conosco.</p>
+          <p>Diponibilizamos o uso de caminhão caçamba que estão prontos para lidar com suas necessidades de transporte de terras, entulhos de materiais de forma eficiente e confiável. </p>
         </GroupDiv>
       </MainGroup>
 
@@ -120,7 +120,7 @@ export function Tools() {
       <MainGroup ref={ContainerRef} isVisible={isVisible} className="keen-slider__slide number-slide4">
       <GroupDiv>
          <h2>Mini Escavadeira</h2>
-          <p>Com sua capacidade compacta, a mini escavadeira permite acesso a áreas restritas, agilizando a escavação e remoção de solo de maneira precisa. Sua versatilidade se destaca na execução de tarefas como nivelamento de terreno, escavação de valas e preparação de terreno para construção. </p>
+          <p>Com sua capacidade compacta, a mini escavadeira permite acesso a áreas pequenas, agilizando a escavação e remoção de terra de maneira precisa. Sua versatilidade se destaca na execução de tarefas como nivelamento de terreno, escavação de valas (piscina) e preparação de terreno para construção. </p>
          </GroupDiv>
          <GroupImg>
           <img src={MiniEscavadeira} alt="" />

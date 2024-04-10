@@ -1,4 +1,6 @@
-import { FooterContainer, FooterGroup, Group } from "./style";
+import { FooterContainer, FooterGroup, FooterGroupPowered, Group } from "./style";
+
+import  Ajrdev  from '../../assets/ajrdev.svg'
 
 export function Footer() {
   return(
@@ -17,12 +19,14 @@ export function Footer() {
       <Group>
         <h4>Contato</h4>
         <a href="mailto:jmocciterraplanagem@gmail.com?subject=Vim pelo site">jmocciterraplanagem@gmail.com</a> <br />
-        <a href="https://wa.me/5544999905756">44 99990-5756</a><br />
-        <a href="https://wa.me/5544998403340">44 99840-3340</a>
+        <a href="https://wa.me/5544999905756">(44) 99990-5756</a><br />
+        <a href="https://wa.me/5544998403340">(44) 99840-3340</a>
       </Group>
 
       </FooterGroup>
-      <p>Powered by <a href="https://react-almir-portfolio.vercel.app/">AlmirJrDev</a>©</p>
+      <FooterGroupPowered >
+        <div><p>Powered by </p></div><a href="https://react-almir-portfolio.vercel.app/"><img src={Ajrdev} alt="" /></a>©
+        </FooterGroupPowered>
 
 
     </FooterContainer>
