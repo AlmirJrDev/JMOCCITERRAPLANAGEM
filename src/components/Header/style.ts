@@ -42,7 +42,7 @@ justify-content: center;
 
 ul{
    list-style-type: none;
-
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,20 +97,33 @@ justify-content: center;
    
   }
 `
-export const UlGroup = styled.div`
+export const UlGroup = styled.nav`
 
 background: #1acd81;
 box-shadow: rgb(1, 1, 17) 0px 20px 30px -20px;
- padding: 1rem;
-border-radius: 20px;
+
+border-radius: 2rem;
  margin-right: 2rem;
 
 
+ 
+ul{
+  padding: 1rem;
+  gap: 2rem;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  margin: 0 auto ;
+  
+}
+li{
+  
+}
 a{
   
 
   color: white;
-  margin: 1rem 1rem;
+   
   text-decoration: none;
   font-weight: bold;
   
